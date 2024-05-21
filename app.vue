@@ -3,7 +3,7 @@
 const config = useRuntimeConfig()
 
 useHead({
-  titleTemplate: '%s %separator Chromatone Academy',
+  titleTemplate: '%s %separator Chromatone Tutor',
   templateParams: {
     separator: '·',
   },
@@ -27,27 +27,27 @@ useSeoMeta({
   viewport: 'width=device-width, initial-scale=1.0',
   charset: 'utf-8',
   themeColor: '#D3D3E8',
-  applicationName: 'Academy',
+  applicationName: 'Chromatone tutor',
   author: "Denis Starov",
   creator: 'Chromatone',
 
-  title: 'Chromatone Academy',
-  description: 'Visual Music Language Education Research Center. Join the global community of students, researchers and teachers of new approach to music. Async non-linear courses, group activities and personal guidance available for subscribed members.',
+  title: 'Denis Starov',
+  description: 'Visual Music Language author and developer open for educational collaborations',
 
-  ogTitle: 'Chromatone Academy',
-  ogSiteName: 'Chromatone Academy',
-  ogDescription: 'Visual Music Language Education Research Center. Join the global community of students, researchers and teachers of new approach to music. Async non-linear courses, group activities and personal guidance available for subscribed members.',
-  ogImage: 'https://academy.chromatone.center/cover.jpg',
+  ogTitle: 'Chromatone Tutor',
+  ogSiteName: 'Chromatone Tutor',
+  ogDescription: 'Visual Music Language author and developer open for educational collaborations. Tutor with more than 7 years of experience, unique method and variety of interactive tools.',
+  ogImage: 'https://tutor.chromatone.center/subject.jpg',
   ogImageType: 'image/jpeg',
-  ogImageAlt: 'Chromatone Academy - Study and Perform with Visual Music Language',
+  ogImageAlt: 'Chromatone Tutor - Study and Perform Visual Music Language with the author of the system',
 
   twitterCard: 'summary_large_image',
   twitterLabel1: 'Visual Music Language',
-  twitterLabel2: 'Online Education Center',
+  twitterLabel2: 'Tutor',
   twitterSite: '@davay42',
   twitterCreator: '@davay42',
   twitterImageType: 'image/jpeg',
-  twitterImage: 'https://academy.chromatone.center/cover.jpg',
+  twitterImage: 'https://tutor.chromatone.center/subject.jpg',
 
 })
 
