@@ -35,6 +35,9 @@ importers:
       timezones-list:
         specifier: ^3.0.3
         version: 3.0.3
+      uqr:
+        specifier: ^0.1.2
+        version: 0.1.2
       vue:
         specifier: ^3.4.27
         version: 3.4.27
