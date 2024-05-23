@@ -29,6 +29,7 @@ export default defineNuxtConfig({
 		public: {
 			dbDomain: "",
 			dbUrl: "",
+			umamiId: "",
 		},
 	},
 	notivue: {

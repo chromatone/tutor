@@ -15,10 +15,10 @@ useHead({
     type: "image/svg+xml", href: "/logo.svg"
   }],
   script: [
-    ['production', 'prerender'].includes(String(process.env.NODE_ENV)) ? {
-      'data-website-id': config.public.umamiId,
+    ['production', 'prerender'].includes(process.env.NODE_ENV) ? {
+      'data-website-id': '3f2943a6-8acf-4178-ac46-f03513479632',
       async: '',
-      src: config.public.umamiUrl
+      src: 'https://stats.chromatone.center/script.js'
     } : false
   ].filter(Boolean)
 })
