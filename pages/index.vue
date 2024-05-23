@@ -112,27 +112,31 @@ async function pay() {
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4(style="flex: 1 1 300px")
-      p Find my expertise fit to guide your own musical journey? Let's have a talk! I'm ready to share my experience and knowledge in dense and complete form of 1-hour lessons according to personal program developed on the first orientational meeting. Let's talk!
-    a.flex-1.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
-      href="https://discordapp.com/users/535370860521979914/" 
-      target="_blank"
-      )
-      .i-la-discord.text-4xl
-      .text-2xl davay42
+      p Find my expertise fit to guide your own musical journey? Let's have a talk! I'm ready to share my experience and knowledge in dense and complete form of 1-hour lessons according to personal program developed on the first orientational meeting.
+      .flex.flex-wrap.gap-4.w-full
+        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
+          href="https://discordapp.com/users/535370860521979914/" 
+          target="_blank"
+          style="flex: 1 1 80px"
+          )
+          .i-la-discord.text-2xl
+          .text-lg davay42
 
-    a.flex-1.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
-      href="https://t.me/starov"
-      target="_blank"
-      )
-      .i-la-telegram.text-4xl
-      .text-2xl starov
+        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
+          href="https://t.me/starov"
+          style="flex: 1 1 80px"
+          target="_blank"
+          )
+          .i-la-telegram.text-2xl
+          .text-lg starov
 
-    a.flex-1.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
-      href="https://instagram.com/chromatone.center"
-      target="_blank"
-      )
-      .i-la-instagram.text-4xl
-      .text-2xl chromatone.center
+        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
+          style="flex: 1 1 100px"
+          href="https://instagram.com/chromatone.center"
+          target="_blank"
+          )
+          .i-la-instagram.text-2xl
+          .text-lg chromatone.center
   .flex.flex-wrap.gap-4.w-full.items-start.flex-1
     button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl(v-if="isSupported" @click="startShare()")
       .i-la-share.text-4xl
