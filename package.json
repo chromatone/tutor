@@ -18,6 +18,7 @@
 		"notivue": "^2.4.4",
 		"nuxt": "^3.11.2",
 		"nuxt-auth-utils": "^0.0.25",
+		"nuxt-calendly": "^0.1.18",
 		"pnpm": "^9.1.1",
 		"timezones-list": "^3.0.3",
 		"uqr": "^0.1.2",

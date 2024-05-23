@@ -21,6 +21,7 @@ export default defineNuxtConfig({
 		"notivue/nuxt",
 		"floating-vue/nuxt",
 		"nuxt-cron",
+		"nuxt-calendly",
 	],
 	runtimeConfig: {
 		dbManagerKey: "",
