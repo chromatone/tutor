@@ -52,7 +52,7 @@ async function pay() {
 
   .flex.flex-wrap.gap-8.z-2(style="flex: 1 1 45ch")
 
-    a.flex.flex-wrap.items-center.gap-4.bg-light-400.p-4.rounded-2xl.shadow-xl(href="https://chromatone.center" target="_blank")
+    a.w-full.flex.flex-wrap.items-center.gap-4.bg-light-400.p-4.rounded-2xl.shadow-xl(href="https://chromatone.center" target="_blank")
       img.w-10.z-2(src="~assets/images/logo.svg")
       .font-bold.text-2xl Chromatone
       .flex-auto 
@@ -65,8 +65,8 @@ async function pay() {
 
       .flex.items-stretch.bg-light-400.rounded-xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px")
         .flex.flex-col.gap-2.flex-1.p-4
-          h1.text-4xl.sm-text-6xl Denis Starov
-          .text-2xl.sm-text-3xl Tutor
+          h1.text-3xl.sm-text-4xl Denis Starov
+          .text-xl.sm-text-2xl Visual Music Tutor
           .flex-auto
           h2.text-lg Phuket, Thailand
 
@@ -110,9 +110,9 @@ async function pay() {
 
   .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4(style="flex: 1 1 300px")
-      p I'm developing new ways to interconnect senses and illuminate hidden depths of music and arts. Through my 7+ years long Chromatone odyssey I got wide musician experience, deep music theory understanding and a handful of open-source interactive web apps to teach, play and perform with. Now I'm ready to help you on your way in music with personalized programs tailored for your goals and inspirations.  Here are my main subjects:
-    .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
+      p I'm actively developing new ways to interconnect senses and illuminate hidden depths of music and arts. Through my 10+ years in music and 7+ years in the Chromatone odyssey I collected wide independent musician experience, deep music theory understanding and a handful of open-source interactive web-apps to teach, play and perform with. Now I'm ready to help you on your way in music with personalized programs tailored for your goals and inspirations. Here are my main subjects:
 
+    .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
       .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-xl(style="flex: 1 1 40%")
         h3.text-2xl Visual Music Theory
         .text-sm Understand notes, intervals, rhythms, chords and more
@@ -131,7 +131,7 @@ async function pay() {
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4(style="flex: 1 1 300px")
       p Not sure if my expertise is fit to guide your own musical journey? Let's have a talk! We can discuss your ideas, doubts and aspirations before the session. I'm open for any kind of educational and creative collaboration formats.  
       .flex.flex-wrap.gap-4.w-full
-        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
+        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-100.text-light(
           data-umami-event="Discord"
           href="https://discordapp.com/users/535370860521979914/" 
           target="_blank"
@@ -140,7 +140,7 @@ async function pay() {
           .i-la-discord.text-2xl
           .text-lg davay42
 
-        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
+        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-100.text-light(
           href="https://t.me/starov"
           data-umami-event="Telegram"
           style="flex: 1 1 80px"
@@ -149,7 +149,7 @@ async function pay() {
           .i-la-telegram.text-2xl
           .text-lg starov
 
-        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-200.text-light(
+        a.flex.gap-4.items-center.z-4.p-4.rounded-xl.shadow-xl.bg-dark-100.text-light(
           style="flex: 1 1 100px"
           href="https://instagram.com/chromatone.center"
           data-umami-event="Instagram"
