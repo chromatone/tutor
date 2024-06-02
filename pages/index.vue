@@ -113,6 +113,10 @@ async function pay() {
       .text-green-600.p-4.bg-shadow-xl.rounded-2xl.text-center.text-xl(v-if="scheduled && paid") All set! See you there!
 
   .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
+
+    youtube-embed(
+      style="flex: 1 1 300px"
+      video="qthKClCRIl0")
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4(style="flex: 1 1 300px")
       p I'm actively developing new ways to interconnect senses and illuminate hidden depths of music and arts. Through my 10+ years in music and 7+ years in the Chromatone odyssey I collected wide independent musician experience, deep music theory understanding and a handful of free open-source interactive music web-apps to learn, explore and perform with. Now I'm offering my helping hand to you on your own way into depths of music with personalized programs tailored for your goals and aspirations. My main tutoring subjects are:
 
@@ -161,17 +165,17 @@ async function pay() {
           )
           .i-la-instagram.text-3xl
           .text-xl starov
-  .flex.flex-col.items-stretch.gap-4.w-full.items-start.max-w-45ch(style="flex: 1 1 240px" )
-    .shadow-xl.bg-light-100.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
-      .text-2xl Share this page with a friend
-    .shadow-xl.rounded-2xl.overflow-clip.z-10.max-w-45c.min-w-40.max-w-45ch( v-html="svg")
+    .flex.flex-col.items-stretch.gap-4.w-full.items-start.max-w-45ch(style="flex: 1 1 240px" )
+      .shadow-xl.bg-light-100.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
+        .text-2xl Share this page with a friend
+      .shadow-xl.rounded-2xl.overflow-clip.z-10.max-w-45c.min-w-40.max-w-45ch( v-html="svg")
 
-    button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl(
-      data-umami-event="Share"
-      style="flex: 1 1 100%" 
-    v-if="isSupported" @click="startShare()")
-      .i-la-share.text-2xl
-      .text-xl Share now
+      button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl(
+        data-umami-event="Share"
+        style="flex: 1 1 100%" 
+      v-if="isSupported" @click="startShare()")
+        .i-la-share.text-2xl
+        .text-xl Share now
 </template>
 
 <style scoped lang="postcss"></style>
