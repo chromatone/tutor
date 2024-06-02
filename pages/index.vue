@@ -1,5 +1,9 @@
 <script setup>
 import { useShare } from '@vueuse/core'
+import { useClipboard } from '@vueuse/core'
+
+const source = ref('https://tutor.chromatone.center/')
+const { text, copy, copied } = useClipboard({ source })
 
 const { share, isSupported } = useShare()
 
@@ -18,6 +22,8 @@ const svg = renderSVG('https://tutor.chromatone.center/', {
   blackColor: '#333',
   ecc: 'M'
 })
+
+const showQr = ref(false)
 
 const calendly = useCalendly()    // Loads the badge on page/component mount    
 const handleClick = () => { calendly.initPopupWidget({ url: 'https://calendly.com/davay/private-tutorship-session', }) }
@@ -72,18 +78,18 @@ async function pay() {
 
   .flex.flex-col.gap-4(style="flex: 1 1 280px")
     .bg-light-200.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-4
-      .text-2xl Private tutor sessions
+      .text-2xl Private tutorship sessions
       .flex.flex-wrap.gap-2.items-baseline.mx-2
         .flex.items-baseline
           .text-4xl $45
           .text-2xl.op-50 /hr
-        .text-2xl.op-50(title="1500 THB - Thai Baht") (฿1500/hr)
+        //- .text-2xl.op-50(title="1500 THB - Thai Baht") (฿1500/hr)
       ul.list-circle.list-inside.my-2
         li 1 hour one-on-one session
         li Online video-call (Google Meet) 
-        li Or in-person meeting (Phuket, Thailand)
         li Personalized educational program
-        li Any music theory and practical questions
+        li Start from any music theory and practice level
+        li Go as deep as you want
         li Interactive explainer web-apps at hand
         li Insights and advice on your current projects
 
@@ -165,17 +171,38 @@ async function pay() {
           )
           .i-la-instagram.text-3xl
           .text-xl starov
-    .flex.flex-col.items-stretch.gap-4.w-full.items-start.max-w-45ch(style="flex: 1 1 240px" )
-      .shadow-xl.bg-light-100.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
-        .text-2xl Share this page with a friend
-      .shadow-xl.rounded-2xl.overflow-clip.z-10.max-w-45c.min-w-40.max-w-45ch( v-html="svg")
+    .flex.flex-col.items-stretch.gap-4.w-full.items-start(style="flex: 1 1 240px" )
+      .flex.flex-wrap.items-stretch.gap-4.shadow-xl.bg-light-100.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
+        .text-2xl Share this page 
+        .text-lg It's not easy to reach people these days. Your contribution is spreading the word is very appreciated!
 
-      button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl(
-        data-umami-event="Share"
-        style="flex: 1 1 100%" 
-      v-if="isSupported" @click="startShare()")
-        .i-la-share.text-2xl
-        .text-xl Share now
+        button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl.disabled-contrast-40(
+          data-umami-event="Share"
+          style="flex: 1 1 50px" 
+          :disabled="!isSupported" 
+          @click="startShare()"
+          )
+          .i-la-share.text-2xl
+          .text-xl Share
+
+        button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl(
+          @click="copy()"
+          data-umami-event="Copy"
+          style="flex: 1 1 50px" 
+        ) 
+          .i-la-clipboard.text-2xl
+          .text-xl.flex-1.text-left {{copied ? 'Copied': 'Copy'}}
+
+        button.flex.items-center.gap-4.p-4.bg-dark-200.text-light.shadow-xl.rounded-2xl.disabled-contrast-40(
+          data-umami-event="Share"
+          style="flex: 1 0 80px" 
+          @click="showQr = !showQr")
+            .i-la-qrcode.text-2xl
+            .text-xl.flex-1.text-left {{ showQr ? 'Hide' : 'Show' }}&nbsp;QR
+
+
+      .shadow-xl.rounded-2xl.overflow-clip.z-10.min-w-40.max-w-45ch( v-html="svg" v-if="showQr")
+
 </template>
 
 <style scoped lang="postcss"></style>
