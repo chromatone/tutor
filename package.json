@@ -1,45 +1,29 @@
 {
 	"name": "chromatone-tutor",
-	"version": "0.2.0",
+	"description": "Personal tutorship web-page",
+	"version": "0.3.0",
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "nuxt build",
-		"dev": "nuxt dev",
-		"generate": "nuxt generate",
-		"preview": "nuxt preview --port 3093",
-		"postinstall": "nuxt prepare"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@unocss/reset": "^0.60.3",
-		"@vueuse/math": "^10.10.0",
-		"date-fns": "^3.6.0",
-		"floating-vue": "^5.2.2",
-		"notivue": "^2.4.4",
-		"nuxt": "^3.11.2",
-		"nuxt-auth-utils": "^0.0.25",
-		"nuxt-calendly": "^0.1.18",
-		"pnpm": "^9.1.3",
-		"timezones-list": "^3.0.3",
-		"uqr": "^0.1.2",
+		"@directus/sdk": "^16.1.0",
+		"@unocss/reset": "^0.60.4",
+		"@vueuse/core": "^10.10.0",
 		"vue": "^3.4.27",
-		"vue-lite-youtube-embed": "^1.2.4",
 		"vue-router": "^4.3.2",
-		"zod": "^3.23.8"
+		"uqr": "^0.1.2"
 	},
 	"devDependencies": {
-		"@directus/sdk": "^16.0.2",
-		"@nuxt/image": "^1.7.0",
-		"@nuxtjs/color-mode": "^3.4.1",
-		"@nuxtjs/mdc": "^0.7.1",
-		"@nuxtjs/sitemap": "^5.2.0",
-		"@unocss/extractor-pug": "^0.60.3",
-		"@unocss/nuxt": "^0.60.3",
-		"@vue/language-plugin-pug": "^2.0.19",
-		"nuxt": "^3.11.2",
-		"nuxt-cron": "^1.5.1",
-		"nuxt-directus": "^5.6.1",
+		"@unocss/extractor-pug": "^0.60.4",
+		"@vitejs/plugin-vue": "^5.0.5",
+		"@vue/language-plugin-pug": "^2.0.21",
 		"pug": "^3.0.3",
-		"unocss": "0.60.3"
+		"unocss": "^0.60.4",
+		"vite": "5.2.13",
+		"vite-plugin-singlefile": "^2.0.1"
 	}
 }
