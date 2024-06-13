@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@directus/sdk':
-        specifier: ^16.1.0
-        version: 16.1.0
       '@unocss/reset':
         specifier: ^0.60.4
         version: 0.60.4
@@ -209,13 +206,6 @@ packages:
   '@babel/types@7.24.7':
     resolution: {integrity: sha512-XEFXSlxiG5td2EJRe8vOmRbaXVgfcBlszKujvVmWIK/UpywWljQCfzAv3RQCGujWQ1RD4YYWEAqDXfuJiy8f5Q==}
     engines: {node: '>=6.9.0'}
-
-  '@directus/sdk@16.1.0':
-    resolution: {integrity: sha512-vqgG2Fn2uVAZkKz8UdXIrWd0GH+cYGsDUH0ojsGgjmUlaS1Ef5L89ZV4jynILPE+/+PPrNQsZHjHSkVoqFyFoQ==}
-    engines: {node: '>=18.0.0'}
-
-  '@directus/system-data@1.0.4':
-    resolution: {integrity: sha512-9qDfL/fSy1K01SMMXc7XiTbfAqA/1G9RBEO3nafHDN6SKJfE15YRlnELQA0LeWDKKiyIlWtKzpUBLrq7r6sN2Q==}
 
   '@esbuild/aix-ppc64@0.20.2':
     resolution: {integrity: sha512-D+EBOJHXdNZcLJRBkhENNG8Wji2kgc9AZ9KiPr1JuZjsNtyHzrsfLRrY0tk2H2aoFu6RANO1y1iPPUCDYWkb5g==}
@@ -1541,12 +1531,6 @@ snapshots:
       '@babel/helper-string-parser': 7.24.7
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
-
-  '@directus/sdk@16.1.0':
-    dependencies:
-      '@directus/system-data': 1.0.4
-
-  '@directus/system-data@1.0.4': {}
 
   '@esbuild/aix-ppc64@0.20.2':
     optional: true
