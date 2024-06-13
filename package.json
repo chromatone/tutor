@@ -10,7 +10,6 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@directus/sdk": "^16.1.0",
 		"@unocss/reset": "^0.60.4",
 		"@vueuse/core": "^10.10.0",
 		"vue": "^3.4.27",
