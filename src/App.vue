@@ -43,8 +43,8 @@ async function pay() {
 </script>
 
 <template lang="pug">
-.flex.flex-wrap.items-start.gap-8.p-8( 
-
+.flex.flex-wrap.items-start.gap-8.p-8.text-18px.line-height-relaxed( 
+  class=""
   style="background:  linear-gradient(hsla(300deg,1%,90%,0.9) 0%,hsla(300deg,1%,100%,0.7) 50%, hsla(0deg,50%,100%,0.2) 100%), url(/pattern.jpg); background-size: 700px; background-attachment: normal; background-repeat: all")
 
   .flex.flex-wrap.gap-8.z-2(style="flex: 1 1 300px")
@@ -58,19 +58,21 @@ async function pay() {
     .flex.flex-wrap.gap-4
       .flex.items-stretch.bg-light-400.rounded-2xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px")
 
-        img.op-90(src="/square.jpg")
+        img(src="/square.jpg")
 
       .flex.items-stretch.bg-light-400.rounded-xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px")
         .flex.flex-col.gap-2.flex-1.p-4
-          h1.text-3xl.sm-text-4xl Denis Starov
-          .text-xl.sm-text-2xl Visual Music Tutor
-          .text-lg Improving skills by understanding 
+          h1.text-5xl Denis Starov
+          .text-2xl Visual Music Tutor
+          .text-lg Improving music skills by  understanding 
+          .flex-auto
+          a.self-start.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session
           .flex-auto
           h2.text-lg Phuket, Thailand
 
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
-      p I'm creating new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired independent musician experience, deep music theory understanding and a handful of free open-source interactive music web-apps to learn, explore and communicate with. 
-      p I can show you music from completely new scientific perspective, improving your current skills by deeper understanding of music theory and practice.
+      p I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired experience of a independent musician, deep understanding of music theory and a handful of free open-source interactive music web-apps to learn, play and explore with. 
+      p I can show you music from completely new perspective, improving your current skills by deeper understanding.
 
 
 
@@ -81,7 +83,12 @@ async function pay() {
       video="qthKClCRIl0")
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
 
-      p Now I'm offering my expertise to you on your own way into depths of music with personalized programs made specifically for your goals and aspirations. My main tutoring subjects are:
+      p From June 2024 I've started offering my expertise to students and musicians all over the world. 
+      p As a tutor I get to know you and then develop  personal educational program made specifically for your goals and aspirations. I estimate practice time, explain topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
+
+      p Music itself takes time, but it brings so much back to our life. Curiosity, self-esteem and self-expression bloom in music, and I can help you blossom with it too!
+    .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
+      .text-xl My primary tutorship subjects
 
     .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
       .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
@@ -98,26 +105,28 @@ async function pay() {
         .text-md How to use JavaScript to create stunning interactive multimedia web-apps
 
   .flex.flex-col.gap-4(style="flex: 1 1 280px")
-    .bg-light-200.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
-      .text-2xl Private tutorship sessions
+
+    img.rounded-xl.shadow-xl(src="/share.jpg")
+    #book.bg-light-200.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
+      .text-3xl Private tutorship session
       .flex.flex-wrap.gap-2.items-baseline.mx-2
         .flex.items-baseline
-          .text-4xl $45
+          .text-5xl $45
           .text-2xl.op-50 /hr
         //- .text-2xl.op-50(title="1500 THB - Thai Baht") (฿1500/hr)
 
 
-      .border-y-2.py-2.my-2.flex.flex-col.gap-2 
+      .border-y-2.py-2.my-2.flex.flex-col.gap-2.text-18px
         .text-xl What you get:
-        ul.list-circle.list-inside.mb-2.text-16px.flex.flex-col.gap-1
+        ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
           li 1 hour one-on-one session
           li Online video-call (Google Meet) 
           li Personal educational program
-          li Start from your knowledge and skills
+          li We start from your knowledge level and skills
           li And find ways to improve them together
           li Interactive explainer web-apps at hand
           li Insights and advice on your projects
-          li A list of sources mentioned soon after
+          li A list of sources mentioned soon after the session
 
       a.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(
         aria-label="Schedule a tutorship session button"
