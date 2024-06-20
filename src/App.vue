@@ -68,6 +68,35 @@ async function pay() {
           .flex-auto
           h2.text-lg Phuket, Thailand
 
+    .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
+      p I'm creating new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired independent musician experience, deep music theory understanding and a handful of free open-source interactive music web-apps to learn, explore and communicate with. 
+      p I can show you music from completely new scientific perspective, improving your current skills by deeper understanding of music theory and practice.
+
+
+
+  .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
+
+    youtube-embed(
+      style="flex: 1 1 300px"
+      video="qthKClCRIl0")
+    .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
+
+      p Now I'm offering my expertise to you on your own way into depths of music with personalized programs made specifically for your goals and aspirations. My main tutoring subjects are:
+
+    .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
+      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
+        h3.text-3xl Visual Music Theory
+        .text-md How to improve your understanding of rhythms, notes, intervals, chords and scales with shapes and colors
+      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
+        h3.text-3xl Collaborative performance
+        .text-md How to improvise with others and how to organise a nice jam session
+      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
+        h3.text-3xl Live Multimedia Production
+        .text-md How to research and build your own portable setup to create and record music live
+      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
+        h3.text-3xl Creative Web Development
+        .text-md How to use JavaScript to create stunning interactive multimedia web-apps
+
   .flex.flex-col.gap-4(style="flex: 1 1 280px")
     .bg-light-200.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .text-2xl Private tutorship sessions
@@ -116,30 +145,6 @@ async function pay() {
         .i-la-check(v-else)
 
       .text-sm You can pay any time before or after the session.
-
-
-  .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
-
-    youtube-embed(
-      style="flex: 1 1 300px"
-      video="qthKClCRIl0")
-    .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
-      p I'm developing new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired independent musician experience, deep music theory understanding and a handful of free open-source interactive music web-apps to learn, explore and perform with. 
-      p Now I'm offering my expertise to you on your own way into depths of music with personalized programs made specifically for your goals and aspirations. My main tutoring subjects are:
-
-    .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
-      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Visual Music Theory
-        .text-md How to improve your understanding of rhythms, notes, intervals, chords and scales with shapes and colors
-      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Collaborative performance
-        .text-md How to improvise with others and how to organise a nice jam session
-      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Live Multimedia Production
-        .text-md How to research and build your own portable setup to create and record music live
-      .flex.flex-col.gap-2.p-4.bg-light-400.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Creative Web Development
-        .text-md How to use JavaScript to create stunning interactive multimedia web-apps
 
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
