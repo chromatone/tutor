@@ -45,7 +45,7 @@ async function pay() {
 <template lang="pug">
 .flex.flex-wrap.items-start.gap-8.p-8.text-18px.line-height-relaxed( 
   class=""
-  style="background:  linear-gradient(hsla(300deg,1%,90%,0.9) 0%,hsla(300deg,1%,100%,0.7) 50%, hsla(0deg,50%,100%,0.2) 100%), url(/pattern.jpg); background-size: 700px; background-attachment: normal; background-repeat: all")
+  style="background:  linear-gradient(hsla(300deg,1%,90%,0.97) 0%,hsla(300deg,1%,100%,.96) 50%, hsla(0deg,50%,100%,0.8) 100%), url(/pattern.jpg); background-size: 700px; background-attachment: normal; background-repeat: all")
 
   .flex.flex-wrap.gap-8.z-2(style="flex: 1 1 300px")
 
@@ -64,11 +64,12 @@ async function pay() {
         .flex.flex-col.gap-2.flex-1.p-4
           h1.text-5xl Denis Starov
           .text-2xl Visual Music Tutor
-          .text-lg Improving music skills by  understanding 
+          h2.text-sm Phuket, Thailand
+          .text-lg Improving music skills by understanding nature
           .flex-auto
-          a.self-start.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session
+          a.self-start.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session now
           .flex-auto
-          h2.text-lg Phuket, Thailand
+
 
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
       p I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired experience of a independent musician, deep understanding of music theory and a handful of free open-source interactive music web-apps to learn, play and explore with. 
@@ -83,10 +84,11 @@ async function pay() {
       video="qthKClCRIl0")
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
 
-      p From June 2024 I've started offering my expertise to students and musicians all over the world. 
-      p As a tutor I get to know you and then develop  personal educational program made specifically for your goals and aspirations. I estimate practice time, explain topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
+      p From June 2024 and onwards I'm  offering my expertise in a convenient form of pay-as-you-go tutoring sessions to students and musicians all over the world. 
+      p As a tutor I get to know you first, then we develop personal study program specific for your goals and aspirations. I estimate practice efforts, explain core topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
 
-      p Music itself takes time, but it brings so much back to our life. Curiosity, self-esteem and self-expression bloom in music, and I can help you blossom with it too!
+      p Music itself takes time, but it brings so much back to our life. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
+
     .bg-light-400.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
       .text-xl My primary tutorship subjects
 
@@ -111,8 +113,8 @@ async function pay() {
       .text-3xl Private tutorship session
       .flex.flex-wrap.gap-2.items-baseline.mx-2
         .flex.items-baseline
-          .text-5xl $45
-          .text-2xl.op-50 /hr
+          .text-4xl $45
+          .text-2xl.op-50.ml-2 / 1 hour session
         //- .text-2xl.op-50(title="1500 THB - Thai Baht") (฿1500/hr)
 
 
@@ -126,7 +128,7 @@ async function pay() {
           li And find ways to improve them together
           li Interactive explainer web-apps at hand
           li Insights and advice on your projects
-          li A list of sources mentioned soon after the session
+          li I send a list of mentioned sources  soon after the session
 
       a.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(
         aria-label="Schedule a tutorship session button"
@@ -158,7 +160,7 @@ async function pay() {
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
     .bg-light-400.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
-      p Want to make sure my expertise fits your personal musical journey? Let's have a chat first! We can discuss your ideas, doubts and aspirations before you decide on a session. I'm open for new educational formats and creative collaborations.
+      p Want to make sure if my expertise fits your own musical journey? Let's have a chat! We may discuss your ideas, doubts and aspirations before you decide on a session. DM me to discuss how visual approach can benefit your musical progress and projects.
       .flex.flex-wrap.gap-4.w-full
 
         a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.border-op-50.hover-border-op-100.text-dark.transition(
@@ -187,8 +189,16 @@ async function pay() {
           target="_blank"
           )
           .i-la-telegram.text-3xl
-          .text-xl starov
+          .text-xl starov 
 
+        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.border-op-50.hover-border-op-100.text-dark.transition(
+          href="https://github.com/davay42"
+          data-umami-event="Telegram"
+          style="flex: 1 1 80px"
+          target="_blank"
+          )
+          .i-la-github.text-3xl
+          .text-xl davay42 
 
     .flex.flex-col.items-stretch.gap-4.w-full.items-start(style="flex: 1 1 240px" )
       .flex.flex-wrap.items-stretch.gap-4.shadow-2xl.bg-light-100.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
