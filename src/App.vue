@@ -61,25 +61,25 @@ const isDark = useDark()
       .text-sm.uppercase.op-40.text-right.flex-1 Visual Music Language
     StateDark.fixed.top-4.right-4
 
-    .flex.flex-wrap.gap-4
-      .flex.items-stretch.bg-light-400.dark-bg-dark-300.rounded-2xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px")
+    .flex.flex-wrap.gap-4.w-full
+      .p-16.bg-cover.bg-center.min-h-100.flex.items-stretch.bg-light-400.dark-bg-dark-300.rounded-2xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px" :style="{backgroundImage: `url(/square.jpg)`}")
 
-        img(src="/square.jpg")
+
 
       .flex.items-stretch.bg-light-400.dark-bg-dark-300.rounded-xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px")
         .flex.flex-col.gap-2.flex-1.p-4
           h1.text-5xl Denis Starov
           .text-2xl Visual Music Tutor
           h2.text-sm Phuket, Thailand
-          .text-lg Improving music skills by understanding nature
+          .text-lg Improving music skills and understanding with colors and shapes
           .flex-auto
-          a.self-start.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session now
+          a.dark-bg-light-400.dark-text-dark.self-start.text-center.relative.flex.bg-dark-300.bg-op-90.hover-bg-op-100.dark-bg-op-90.dark-hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session now
           .flex-auto
 
 
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
-      p I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired experience of a independent musician, deep understanding of music theory and a handful of free open-source interactive music web-apps to learn, play and explore with. 
-      p I can show you music from completely new perspective, improving your current skills by deeper understanding.
+      p I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired some experience of an independent musician, deep understanding of music theory and a handful of free open-source interactive music web-apps to learn, explore and perform with. 
+      p Together we can look at music from completely new perspective, improving your current skills by deeper understanding of complex topics.
 
 
 
@@ -102,9 +102,12 @@ const isDark = useDark()
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
         h3.text-3xl Visual Music Theory
         .text-md How to improve your understanding of rhythms, notes, intervals, chords and scales with shapes and colors
+        //- a.flex.items-center.self-start.gap-2.border-1.rounded-xl.py-2.px-3.shadow-lg.bg-light-700.dark-bg-dark-200(href="https://chromatone.center/theory" target="_blank")
+        //-   .i-la-link
+        //-   .p-0.-mt-1 chromatone/theory
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
         h3.text-3xl Collaborative performance
-        .text-md How to improvise with others and how to organise a nice jam session
+        .text-md How to improvise music with others and how to initiate and sustain jam spaces and communities 
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
         h3.text-3xl Live Multimedia Production
         .text-md How to research and build your own portable setup to create and record music live
@@ -117,26 +120,13 @@ const isDark = useDark()
     img.rounded-xl.shadow-xl(src="/share.jpg")
     #book.bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .text-3xl Private tutorship session
-      .flex.flex-wrap.gap-2.items-baseline.mx-2
+      .flex.flex-wrap.gap-2.items-baseline
         .flex.items-baseline
-          .text-4xl $45
-          .text-2xl.op-50.ml-2 / 1 hour session
-        //- .text-2xl.op-50(title="1500 THB - Thai Baht") (฿1500/hr)
+          .text-5xl $45
+          .text-2xl.op-50.ml-2 / 1 hour in July
+        .text-2xl.op-50(title="$89 - Full price") ($89 / hr start August 2024)
 
-
-      .border-y-2.py-2.my-2.flex.flex-col.gap-2.text-18px
-        .text-xl What you get:
-        ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
-          li 1 hour one-on-one session
-          li Online video-call (Google Meet) 
-          li Personal educational program
-          li We start from your knowledge level and skills
-          li And find ways to improve them together
-          li Interactive explainer web-apps at hand
-          li Insights and advice on your projects
-          li I send a list of mentioned sources  soon after the session
-
-      a.text-center.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-bg-light.dark-text-dark(
+      a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Schedule a tutorship session button"
         data-umami-event="Book"
         href="https://calendly.com/davay/private-tutorship-session"
@@ -148,7 +138,7 @@ const isDark = useDark()
         .flex-1 BOOK A SESSION
         .i-simple-icons-calendly(v-if="!booked")
         .i-la-check(v-else)
-      a.relative.flex.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-bg-light.dark-text-dark(
+      a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Pay for the session with Stripe"
         data-umami-event="Pay"
         href="https://book.stripe.com/6oE3eH3bB99MepqeV2"
@@ -161,15 +151,28 @@ const isDark = useDark()
         .i-la-stripe.text-2xl(v-if="!paid")
         .i-la-check(v-else)
 
-      .text-sm You can pay any time before or after the session.
+      .text-sm You can pay any time before the meeting.
 
+      .py-2.my-2.flex.flex-col.gap-2.text-18px
+        .text-2xl What makes a session:
+        ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
+          li 1 hour one-on-one meeting
+          li Online video-call (Google Meet) 
+          li Personal educational program
+          li First we assess your knowledge levels and practical skills
+          li Then find ways to improve them together
+          li We explore the topics with interactive web-apps and build instruments for the purpose
+          li I provide insights for your projects and advice on learning and creative strategies
+          li I send a list of mentioned sources shortly after the session
+          li You define your schedule in our shared calendar and we have a profound talk about your progress every now and then
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
+      .text-2xl Ask me anything
       p Want to make sure if my expertise fits your own musical journey? Let's have a chat! We may discuss your ideas, doubts and aspirations before you decide on a session. DM me to discuss how visual approach can benefit your musical progress and projects.
       .flex.flex-wrap.gap-4.w-full
 
-        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition(
+        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
           style="flex: 1 1 100px"
           href="https://instagram.com/chromatone.center"
           data-umami-event="Instagram"
@@ -178,7 +181,7 @@ const isDark = useDark()
           .i-la-instagram.text-3xl
           .text-xl chromatone.center
 
-        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition(
+        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
           data-umami-event="Discord"
           href="https://discordapp.com/users/535370860521979914/" 
           target="_blank"
@@ -188,7 +191,7 @@ const isDark = useDark()
           .text-xl davay42
 
 
-        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition(
+        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
           href="https://t.me/starov"
           data-umami-event="Telegram"
           style="flex: 1 1 80px"
@@ -197,14 +200,6 @@ const isDark = useDark()
           .i-la-telegram.text-3xl
           .text-xl starov 
 
-        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition(
-          href="https://github.com/davay42"
-          data-umami-event="Telegram"
-          style="flex: 1 1 80px"
-          target="_blank"
-          )
-          .i-la-github.text-3xl
-          .text-xl davay42 
 
     .flex.flex-col.items-stretch.gap-4.w-full.items-start(style="flex: 1 1 240px" )
       .flex.flex-wrap.items-stretch.gap-4.shadow-2xl.bg-light-100.dark-bg-dark-300.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
@@ -214,7 +209,7 @@ const isDark = useDark()
         .text-md Sharing this page with someone who you know to be interested in music is highly appreciated! Thanks!
 
 
-        button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition(
+        button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
           @click="copy()"
           data-umami-event="Copy"
           style="flex: 1 1 50px" 
@@ -222,7 +217,7 @@ const isDark = useDark()
           .i-la-clipboard.text-2xl
           .text-xl.flex-1.text-left {{copied ? 'Copied': 'Copy'}}
 
-        button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.disabled-contrast-40(
+        button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.disabled-contrast-40.dark-border-op-50.dark-hover-border-op-100(
           data-umami-event="Share"
           style="flex: 1 1 50px" 
           :disabled="!isSupported" 
@@ -231,7 +226,7 @@ const isDark = useDark()
           .i-la-share.text-2xl
           .text-xl Share
 
-        button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition(
+        button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
           data-umami-event="Share"
           style="flex: 1 0 80px" 
           @click="showQr = !showQr")
