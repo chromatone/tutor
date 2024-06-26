@@ -135,7 +135,7 @@ const isDark = useDark()
         :class="{'bg-green-600': booked}"
         ) 
         .p-0 1. 
-        .flex-1 BOOK A SESSION
+        .flex-1 BOOK YOUR TIME
         .i-simple-icons-calendly(v-if="!booked")
         .i-la-check(v-else)
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
@@ -147,29 +147,29 @@ const isDark = useDark()
         :class="{'bg-green-600': paid}"
         ) 
         .p-0 2.
-        .flex-1.text-center PAY WITH STRIPE
+        .flex-1.text-center PAY BEFORE START
         .i-la-stripe.text-2xl(v-if="!paid")
         .i-la-check(v-else)
 
-      .text-sm You can pay any time before the meeting.
+      .text-sm Please, use the same email address in both booking and payment forms so I can link your payment with the upcoming session. In case of any difficulties, <a class="underline" href="#contact">contact me</a> right away.
 
       .py-2.my-2.flex.flex-col.gap-2.text-18px
-        .text-2xl What makes a session:
+        .text-2xl What makes up a session:
         ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
           li 1 hour one-on-one meeting
-          li Online video-call (Google Meet) 
-          li Personal educational program
+          li You get a link to the online video-call (Google Meet) 
+          li We develop a program according to your goals and insipirations
           li First we assess your knowledge levels and practical skills
-          li Then find ways to improve them together
-          li We explore the topics with interactive web-apps and build instruments for the purpose
-          li I provide insights for your projects and advice on learning and creative strategies
-          li I send a list of mentioned sources shortly after the session
-          li You define your schedule in our shared calendar and we have a profound talk about your progress every now and then
+          li Then we find ways to improve them according to your priorities and time availability
+          li We will be exploring the topics with illustrations, articles, books and a variety of interactive web-apps 
+          li Looking for best learning strategies for you and creative strategies for your projects
+          li You will receive a list of all notable links and sources shortly after the session
+          li You are welcome to set your own schedule on our calendar so that every now and then we can have a pleasant conversation about visual music and your progress in it.
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
-    .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
-      .text-2xl Ask me anything
-      p Want to make sure if my expertise fits your own musical journey? Let's have a chat! We may discuss your ideas, doubts and aspirations before you decide on a session. DM me to discuss how visual approach can benefit your musical progress and projects.
+    #contact.bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
+      .text-2xl Let's talk
+      p Want to make sure if my expertise fits your own musical journey? Let's have a chat! Share your thoughts, doubts and aspirations before you decide on a session. Contact me to discuss whether a visual approach could benefit your specific musical journey and projects.
       .flex.flex-wrap.gap-4.w-full
 
         a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
@@ -200,13 +200,22 @@ const isDark = useDark()
           .i-la-telegram.text-3xl
           .text-xl starov 
 
+        a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
+          href="mailto:tutor@chromatone.center"
+          data-umami-event="Email"
+          style="flex: 1 1 100px"
+          target="_blank"
+          )
+          .i-la-at.text-3xl
+          .text-xl tutor@chromatone.center 
+
 
     .flex.flex-col.items-stretch.gap-4.w-full.items-start(style="flex: 1 1 240px" )
       .flex.flex-wrap.items-stretch.gap-4.shadow-2xl.bg-light-100.dark-bg-dark-300.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
-        .text-2xl Share this page 
-        .text-lg It's not easy to reach people these days. 
+        .text-2xl Share this link
+        .text-lg It's not so easy to reach people these days. Sharing is highly appreciated.
 
-        .text-md Sharing this page with someone who you know to be interested in music is highly appreciated! Thanks!
+        .text-md Contribute by showing/sending this page to someone who you know might be interested in studying music, art or code.
 
 
         button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
