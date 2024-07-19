@@ -16,10 +16,12 @@ const url = 'https://tutor.chromatone.center/'
 
 const { text, copy, copied } = useClipboard({ source: url })
 
+const { isSupported, share } = useShare()
+
 function startShare() {
   share({
     title: 'Denis Starov',
-    text: 'Chromatone tutor',
+    text: 'Visual music tutorship sessions with Chromatone author author and developer. Bring colors to your music and harmony to your visual arts journey.',
     url
   })
 }
@@ -229,7 +231,7 @@ const isDark = useDark()
         button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.disabled-contrast-40.dark-border-op-50.dark-hover-border-op-100(
           data-umami-event="Share"
           style="flex: 1 1 50px" 
-          :disabled="!isSupported" 
+          v-show="isSupported" 
           @click="startShare()"
           )
           .i-la-share.text-2xl

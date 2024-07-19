@@ -10,18 +10,18 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@unocss/reset": "^0.61.0",
+		"@unocss/reset": "^0.61.5",
 		"@vueuse/core": "^10.11.0",
 		"uqr": "^0.1.2",
-		"vue": "^3.4.29",
-		"vue-router": "^4.3.3"
+		"vue": "^3.4.32",
+		"vue-router": "^4.4.0"
 	},
 	"devDependencies": {
-		"@unocss/extractor-pug": "^0.61.0",
+		"@unocss/extractor-pug": "^0.61.5",
 		"@vitejs/plugin-vue": "^5.0.5",
-		"@vue/language-plugin-pug": "^2.0.21",
+		"@vue/language-plugin-pug": "^2.0.26",
 		"pug": "^3.0.3",
-		"unocss": "^0.61.0",
+		"unocss": "^0.61.5",
 		"vite": "5.2.13",
 		"vite-plugin-singlefile": "^2.0.2"
 	}
