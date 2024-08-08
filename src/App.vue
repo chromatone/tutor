@@ -122,7 +122,7 @@ const isDark = useDark()
 
   .flex.flex-col.gap-4(style="flex: 1 1 280px")
 
-    img.rounded-xl.shadow-xl(src="/share.jpg")
+
     #book.bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .text-3xl Private tutorship session
       .flex.flex-wrap.gap-2.items-baseline
@@ -156,9 +156,9 @@ const isDark = useDark()
         .i-la-check(v-else)
 
       .text-sm Please, use the same email address in both booking and payment forms so I can link your payment with the upcoming session. In case of any difficulties, <a class="underline" href="#contact">contact me</a> right away.
-
+    .bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .py-2.my-2.flex.flex-col.gap-2.text-18px
-        .text-2xl What makes up a session:
+        .text-2xl What makes a session:
         ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
           li 1 hour one-on-one meeting
           li You get a link to the online video-call (Google Meet) 
@@ -171,6 +171,9 @@ const isDark = useDark()
           li You are welcome to set your own schedule on our calendar so that every now and then we can have a pleasant conversation about visual music and your progress in it.
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
+
+    img.rounded-xl.shadow-xl(src="/share.jpg")
+
     #contact.bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
       .text-2xl Let's talk
       p Want to make sure if my expertise fits your own musical journey? Let's have a chat! Share your thoughts, doubts and aspirations before you decide on a session. Contact me to discuss whether a visual approach could benefit your specific musical journey and projects.
