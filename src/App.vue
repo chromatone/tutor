@@ -40,7 +40,7 @@ function bookSession() {
 }
 
 async function pay() {
-  window.open('https://book.stripe.com/6oE3eH3bB99MepqeV2', '_blank')
+  window.open('https://book.stripe.com/7sIdTl3bB71E6WY14d', '_blank')
 }
 
 import { useDark, useToggle } from '@vueuse/core'
@@ -64,7 +64,10 @@ const isDark = useDark()
     StateDark.fixed.top-4.right-4
 
     .flex.flex-wrap.gap-4.w-full
-      .p-16.bg-cover.bg-center.min-h-100.flex.items-stretch.bg-light-400.dark-bg-dark-300.rounded-2xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px" :style="{backgroundImage: `url(/square.jpg)`}")
+      .relative.p-16.bg-cover.bg-center.min-h-100.flex.items-stretch.bg-light-400.dark-bg-dark-300.rounded-2xl.overflow-clip.flex-wrap.shadow-xl(style="flex: 1 1 220px" :style="{backgroundImage: `url(/cutt.gif)`}")
+        .absolute.top-0.bottom-0.left-0.right-0.bg-cover.bg-center.hover-opacity-0.transition.duration-1000(
+          :style="{backgroundImage: `url(saber.png)`}"
+        )
 
 
 
@@ -124,9 +127,8 @@ const isDark = useDark()
       .text-3xl Private tutorship session
       .flex.flex-wrap.gap-2.items-baseline
         .flex.items-baseline
-          .text-5xl $45
-          .text-2xl.op-50.ml-2 / 1 hour in July
-        .text-2xl.op-50(title="$89 - Full price") ($89 / hr start August 2024)
+          .text-5xl $79
+          .text-2xl.op-50.ml-2 / hour
 
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Schedule a tutorship session button"
@@ -143,7 +145,7 @@ const isDark = useDark()
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Pay for the session with Stripe"
         data-umami-event="Pay"
-        href="https://book.stripe.com/6oE3eH3bB99MepqeV2"
+        href="https://book.stripe.com/7sIdTl3bB71E6WY14d"
         target="_blank"
         @click="paid = true"
         :class="{'bg-green-600': paid}"
