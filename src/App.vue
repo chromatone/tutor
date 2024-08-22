@@ -160,15 +160,16 @@ const isDark = useDark()
       .py-2.my-2.flex.flex-col.gap-2.text-18px
         .text-2xl What makes a session:
         ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
-          li 1 hour one-on-one meeting
+          li You describe your case before the call
+          li We schedule time for 1 hour one-on-one meeting
           li You get a link to the online video-call (Google Meet) 
           li We develop a program according to your goals and insipirations
-          li First we assess your knowledge levels and practical skills
-          li Then we find ways to improve them according to your priorities and time availability
+          li At the meeting first we assess your music knowledge levels and practical skills
+          li Then we find ways to improve according to your priorities and resource
           li We will be exploring the topics with illustrations, articles, books and a variety of interactive web-apps 
-          li Looking for best learning strategies for you and creative strategies for your projects
-          li You will receive a list of all notable links and sources shortly after the session
-          li You are welcome to set your own schedule on our calendar so that every now and then we can have a pleasant conversation about visual music and your progress in it.
+          li One meeting can guide your personal theory research and musical practice for weeks and months as you will get all the instruments in your hands directly from the author
+          li Shortly after the session I will send you a list of notable apps, links and sources mentioned
+          li You are welcome to set your own schedule on my calendar so that every now and then we can have a purposeful conversation about music and arts in your life.
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
 
