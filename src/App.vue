@@ -40,7 +40,7 @@ function bookSession() {
 }
 
 async function pay() {
-  window.open('https://book.stripe.com/7sIdTl3bB71E6WY14d', '_blank')
+  window.open('https://book.stripe.com/eVa5mP13tclY5SU3cm', '_blank')
 }
 
 import { useDark, useToggle } from '@vueuse/core'
