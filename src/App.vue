@@ -128,7 +128,7 @@ const isDark = useDark()
       .flex.flex-wrap.gap-2.items-baseline
         .flex.items-baseline
           .text-5xl $79
-          .text-2xl.op-50.ml-2 / hour
+          .text-2xl.op-50.ml-2 / 1 hour session
 
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Schedule a tutorship session button"
