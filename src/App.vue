@@ -145,7 +145,7 @@ const isDark = useDark()
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Pay for the session with Stripe"
         data-umami-event="Pay"
-        href="https://book.stripe.com/7sIdTl3bB71E6WY14d"
+        href="https://book.stripe.com/eVa5mP13tclY5SU3cm"
         target="_blank"
         @click="paid = true"
         :class="{'bg-green-600': paid}"
