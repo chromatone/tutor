@@ -95,10 +95,10 @@ const isDark = useDark()
       video="qthKClCRIl0")
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
 
-      p From June 2024 and onwards I'm  offering my expertise in a convenient form of pay-as-you-go tutoring sessions to students and musicians all over the world. 
-      p As a tutor I get to know you first, then we develop personal study program specific for your goals and aspirations. I estimate practice efforts, explain core topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
+      p From June 2024 and onwards I'm offering my expertise and passion in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any point in the world. 
+      p As a tutor I get to know you and your background first. Then we develop personal study program specific for your goals and aspirations. I estimate practice efforts, explain core topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
 
-      p Music itself takes time, but it brings so much back to our life. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
+      p Music itself takes time, studying music takes even more, but it brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
 
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
       .text-2xl My primary tutorship subjects
@@ -167,9 +167,10 @@ const isDark = useDark()
           li At the meeting first we assess your music knowledge levels and practical skills
           li Then we find ways to improve according to your priorities and resource
           li We will be exploring the topics with illustrations, articles, books and a variety of interactive web-apps 
-          li One meeting can guide your personal theory research and musical practice for weeks and months as you will get all the instruments in your hands directly from the author
+          li You will get all the instruments in your hands directly from the author
+          li 1-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals and pace
           li Shortly after the session I will send you a list of notable apps, links and sources mentioned
-          li You are welcome to set your own schedule on my calendar so that every now and then we can have a purposeful conversation about music and arts in your life.
+          li You can create your own schedule on my calendar so that from time to time we can have a focused conversation about ways of learning and teaching, writing and performing music and art
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
 
