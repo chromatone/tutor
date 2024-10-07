@@ -72,15 +72,15 @@ const isDark = useDark()
           h1.text-5xl Denis Starov
           .text-2xl Visual Music Tutor
           h2.text-sm Phuket, Thailand
-          .text-lg Improving music skills and understanding with colors and shapes
+          .text-lg Improve your music theory and practice with webapps and me
           .flex-auto
           a.dark-bg-light-400.dark-text-dark.self-start.text-center.relative.flex.bg-dark-300.bg-op-90.hover-bg-op-100.dark-bg-op-90.dark-hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session
           .flex-auto
 
 
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
-      p I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in the Chromatone study I acquired some experience of an independent musician, deep understanding of music theory and a handful of free open-source interactive music web-apps to learn, explore and perform with. 
-      p Together we can look at music from completely new perspective, improving your current skills by deeper understanding of complex topics.
+      p Hi! My name is Denis. I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in Chromatone studies I acquired some experience as an independent musician, somewhat deep understanding of music theory and a handful of free and open-source interactive music web-apps to learn, explore and perform with. 
+      p Together we can look at music from completely new perspective, improving your present an acquiring new skills along with deeper understanding of complex topics involved. Music is Math in a way, you know. Let's look at it closer!
 
 
 
@@ -91,10 +91,10 @@ const isDark = useDark()
       video="qthKClCRIl0")
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
 
-      p From June 2024 and onwards I'm offering my expertise in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any place on Earth. 
-      p As a tutor I get to know you and your background first. Then we develop personal study program specific for your goals and aspirations. I estimate practice efforts, explain core topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
+      p June 2024 and onwards I'm offering my expertise in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any place on Earth. 
+      p As a tutor I get to know you and your background first. Then - your goals and aspirations. Then I develop personal study program according to them. I estimate practice efforts, explain core topics, provide homework and sources for further research. I know how to make music study colorful and fun, so we can get there at ease. 
 
-      p Music itself takes time, studying music takes even more, but it brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
+      p Music itself takes time, studying music takes even more of it, but the process itself brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
 
     img.rounded-xl.shadow-xl(src="/place.jpg" style="flex: 1 1 300px")
 
@@ -127,7 +127,7 @@ const isDark = useDark()
         .flex.items-baseline
           .text-5xl $54
           .text-2xl.op-50.ml-2 / 1 hour session
-        .text-sm Special price for the start of academic year 2024-2025. Both students and teachers are welcome to enhance their study using Chromatone with essential and affordable author guidance.
+        .text-sm Special rate for the start of Academic Year 2024-2025. Both students and teachers are welcome to enhance your studies using Chromatone with attentive guidance by its author.
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Schedule a tutorship session button"
         data-umami-event="Book"
@@ -157,22 +157,24 @@ const isDark = useDark()
     .bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .py-2.my-2.flex.flex-col.gap-2.text-18px
         .text-2xl What makes a session:
-        ul.list-circle.list-inside.mb-2.flex.flex-col.gap-1
-          li You describe your case before the call
-          li We schedule time for 1 hour one-on-one meeting
-          li You get a link to the online video-call (Google Meet) 
-          li We develop a program according to your goals and insipirations
-          li At the meeting first we assess your music knowledge levels and practical skills
-          li Then we find ways to improve according to your priorities and resource
-          li We will be exploring the topics with illustrations, articles, books and a variety of interactive web-apps 
-          li You will get all the instruments in your hands directly from the author
-          li 1-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals and pace
+        ol.list-decimal.list-inside.mb-2.flex.flex-col.gap-1
+          li You schedule date and time in my Calendly for 1 hour one-on-one meeting
+          li You describe your case and contacts in the booking form
+          li You get a link to the online video-call (Google Meet) in your email
+          li I get all this info and start developing a program according to your topics of interest
+          li At the meeting we first assess your music knowledge levels and practical skills
+          li Then we find ways to improve according to your priorities and resources
+          li We will be exploring music theory with illustrations, articles, books and music practice with a variety of interactive web-apps 
+          li You will get all these instruments in your hands directly from the author
+
           li Shortly after the session I will send you a list of notable apps, links and sources mentioned
-          li You can create your own schedule on my calendar so that from time to time we can have a focused conversation about ways of learning and teaching, writing and performing music and art
+          li You can set your own meetings schedule via my Calendly page
+
+        p.text-sm 1-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals and pace
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
 
-    img.rounded-xl.shadow-xl(src="/teach.jpg" style="flex: 1 1 300px")
+    img.rounded-xl.shadow-xl(src="/teach.jpg" style="flex: 1 1 250px")
 
     #contact.bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
       .text-3xl Let's talk first
