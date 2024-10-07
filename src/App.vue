@@ -33,15 +33,11 @@ const svg = renderSVG(url, {
 })
 
 
-
-
 function bookSession() {
   window.open('https://calendly.com/davay/private-tutorship-session', '_blank')
 }
 
-async function pay() {
-  window.open('https://book.stripe.com/eVa5mP13tclY5SU3cm', '_blank')
-}
+
 
 import { useDark, useToggle } from '@vueuse/core'
 
@@ -123,13 +119,13 @@ const isDark = useDark()
   .flex.flex-col.gap-4(style="flex: 1 1 280px")
 
 
-    #book.bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
+    #book.bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-4 
       .text-3xl Private tutorship session
-      .flex.flex-wrap.gap-2.items-baseline
+      .flex.flex-col.gap-2.items-baseline
         .flex.items-baseline
-          .text-5xl $79
+          .text-5xl $54
           .text-2xl.op-50.ml-2 / 1 hour session
-
+        .text-sm Special price for the start of academic year 2024-2025. Both students and teachers are welcome to enhance their study using Chromatone with essential and affordable author guidance.
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Schedule a tutorship session button"
         data-umami-event="Book"
@@ -139,23 +135,23 @@ const isDark = useDark()
         :class="{'bg-green-600': booked}"
         ) 
         .p-0 1. 
-        .flex-1 BOOK YOUR TIME
+        .flex-1 BOOK YOUR TIME SLOT
         .i-simple-icons-calendly(v-if="!booked")
         .i-la-check(v-else)
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Pay for the session with Stripe"
         data-umami-event="Pay"
-        href="https://book.stripe.com/eVa5mP13tclY5SU3cm"
+        href="https://book.stripe.com/8wM2aD8vV2Loepq28j"
         target="_blank"
         @click="paid = true"
         :class="{'bg-green-600': paid}"
         ) 
         .p-0 2.
-        .flex-1.text-center PAY BEFORE START
+        .flex-1.text-center PAY BEFORE WE START
         .i-la-stripe.text-2xl(v-if="!paid")
         .i-la-check(v-else)
 
-      .text-sm Please, use the same email address in both booking and payment forms so I can link your payment with the upcoming session. In case of any difficulties, <a class="underline" href="#contact">contact me</a> right away.
+      .text-sm Please, use the same email address in both booking and payment forms so I can link your payment with the upcoming session. In case of any problems with checkout <a class="underline" href="#contact">contact me</a> right away.
     .bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .py-2.my-2.flex.flex-col.gap-2.text-18px
         .text-2xl What makes a session:
@@ -174,10 +170,10 @@ const isDark = useDark()
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
 
-    img.rounded-xl.shadow-xl(src="/share.jpg")
+    img.rounded-xl.shadow-xl(src="/teach.jpg" style="flex: 1 1 300px")
 
     #contact.bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
-      .text-2xl Let's talk
+      .text-3xl Let's talk first
       p Want to make sure if my expertise fits your own musical journey? Let's have a chat! Share your thoughts, doubts and aspirations before you decide on a session. Contact me to discuss whether a visual approach could benefit your specific musical journey and projects.
       .flex.flex-wrap.gap-4.w-full
 
@@ -221,7 +217,7 @@ const isDark = useDark()
 
     .flex.flex-col.items-stretch.gap-4.w-full.items-start(style="flex: 1 1 240px" )
       .flex.flex-wrap.items-stretch.gap-4.shadow-2xl.bg-light-100.dark-bg-dark-300.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
-        .text-2xl Share this link
+        .text-2xl Share this page
         .text-lg It's not so easy to reach people these days. Sharing is highly appreciated.
 
         .text-md Contribute by showing/sending this page to someone who you know might be interested in studying music, art or code.
