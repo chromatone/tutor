@@ -74,7 +74,7 @@ const isDark = useDark()
           h2.text-sm Phuket, Thailand
           .text-lg Improving music skills and understanding with colors and shapes
           .flex-auto
-          a.dark-bg-light-400.dark-text-dark.self-start.text-center.relative.flex.bg-dark-300.bg-op-90.hover-bg-op-100.dark-bg-op-90.dark-hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session now
+          a.dark-bg-light-400.dark-text-dark.self-start.text-center.relative.flex.bg-dark-300.bg-op-90.hover-bg-op-100.dark-bg-op-90.dark-hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session
           .flex-auto
 
 
@@ -91,29 +91,31 @@ const isDark = useDark()
       video="qthKClCRIl0")
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
 
-      p From June 2024 and onwards I'm offering my expertise and passion in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any point in the world. 
+      p From June 2024 and onwards I'm offering my expertise in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any place on Earth. 
       p As a tutor I get to know you and your background first. Then we develop personal study program specific for your goals and aspirations. I estimate practice efforts, explain core topics, provide homework and sources. I know how to make music study colorful and fun, so we can get there at ease. 
 
       p Music itself takes time, studying music takes even more, but it brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
 
+    img.rounded-xl.shadow-xl(src="/place.jpg" style="flex: 1 1 300px")
+
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
-      .text-2xl My primary tutorship subjects
+      .text-3xl Primary tutorship subjects
 
     .flex.flex-wrap.gap-8(style="flex: 1 1 45ch")
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Visual Music Theory
+        h3.text-2xl Visual Music Theory
         .text-md How to improve your understanding of rhythms, notes, intervals, chords and scales with shapes and colors
         //- a.flex.items-center.self-start.gap-2.border-1.rounded-xl.py-2.px-3.shadow-lg.bg-light-700.dark-bg-dark-200(href="https://chromatone.center/theory" target="_blank")
         //-   .i-la-link
         //-   .p-0.-mt-1 chromatone/theory
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Collaborative performance
+        h3.text-2xl Collaborative performance
         .text-md How to improvise music with others and how to initiate and sustain jam spaces and communities 
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Live Multimedia Production
+        h3.text-2xl Live Multimedia Production
         .text-md How to research and build your own portable setup to create and record music live
       .flex.flex-col.gap-2.p-4.bg-light-400.dark-bg-dark-300.rounded-2xl.shadow-2xl(style="flex: 1 1 40%")
-        h3.text-3xl Creative Web Development
+        h3.text-2xl Creative Web Development
         .text-md How to use JavaScript to create stunning interactive multimedia web-apps
 
   .flex.flex-col.gap-4(style="flex: 1 1 280px")
