@@ -72,7 +72,7 @@ const isDark = useDark()
           h1.text-5xl Denis Starov
           .text-2xl Visual Music Tutor
           h2.text-sm Phuket, Thailand
-          .text-lg Improve your music theory and practice with webapps and my educational guidance
+          .text-lg Improve your music theory and practice with colors, shapes, webapps and my attentive guidance
           .flex-auto
           a.dark-bg-light-400.dark-text-dark.self-start.text-center.relative.flex.bg-dark-300.bg-op-90.hover-bg-op-100.dark-bg-op-90.dark-hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session
           .flex-auto
