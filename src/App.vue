@@ -72,15 +72,22 @@ const isDark = useDark()
           h1.text-5xl Denis Starov
           .text-2xl Visual Music Tutor
           h2.text-sm Phuket, Thailand
-          .text-lg Improve your music theory and practice with webapps and me
+          .text-lg Improve your music theory and practice with webapps and my educational guidance
           .flex-auto
           a.dark-bg-light-400.dark-text-dark.self-start.text-center.relative.flex.bg-dark-300.bg-op-90.hover-bg-op-100.dark-bg-op-90.dark-hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.px-4.py-2.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl(href="#book") Book a session
           .flex-auto
 
 
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
-      p Hi! My name is Denis. I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. During my 10+ years in music and 7+ years in Chromatone studies I acquired some experience as an independent musician, somewhat deep understanding of music theory and a handful of free and open-source interactive music web-apps to learn, explore and perform with. 
-      p Together we can look at music from completely new perspective, improving your present an acquiring new skills along with deeper understanding of complex topics involved. Music is Math in a way, you know. Let's look at it closer!
+      p Hi! My name is Denis. I look at the world around as an engineer and a designer, but also as a philosopher and as artist. I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. 
+      
+      p In my 10+ years of music and 7+ years in Chromatone studies I acquired:
+      ul.list-circle
+        li quite some experience as an independent musician
+        li scientific understanding of primary music theory topics
+        li 2+ years of weekly live jams experience, technology and joy
+        li a handful of free and open-source interactive  web-apps to learn, explore and perform music with
+      p Together we can look at music from completely new perspective, improving your skills and acquiring deeper understanding of complex topics involved in music. Music is a form of Math, you know. Let's look at it closer!
 
 
 
@@ -94,7 +101,7 @@ const isDark = useDark()
       p June 2024 and onwards I'm offering my expertise in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any place on Earth. 
       p As a tutor I get to know you and your background first. Then - your goals and aspirations. Then I develop personal study program according to them. I estimate practice efforts, explain core topics, provide homework and sources for further research. I know how to make music study colorful and fun, so we can get there at ease. 
 
-      p Music itself takes time, studying music takes even more of it, but the process itself brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
+      p Music takes time, studying music takes even more of it, but the process itself brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
 
     img.rounded-xl.shadow-xl(src="/place.jpg" style="flex: 1 1 300px")
 
@@ -137,7 +144,7 @@ const isDark = useDark()
         :class="{'bg-green-600': booked}"
         ) 
         .p-0 1. 
-        .flex-1 BOOK YOUR TIME SLOT
+        .flex-1 BOOK A TIME SLOT
         .i-simple-icons-calendly(v-if="!booked")
         .i-la-check(v-else)
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
@@ -149,28 +156,32 @@ const isDark = useDark()
         :class="{'bg-green-600': paid}"
         ) 
         .p-0 2.
-        .flex-1.text-center PAY BEFORE WE START
+        .flex-1.text-center PAY IN ADVANCE
         .i-la-stripe.text-2xl(v-if="!paid")
         .i-la-check(v-else)
 
-      .text-sm Please, use the same email address in both booking and payment forms so I can link your payment with the upcoming session. In case of any problems with checkout <a class="underline" href="#contact">contact me</a> right away.
+      .text-sm Please, use the same email address in both booking and payment forms so I can link your payment with the upcoming session. In case of any problems with checkout please <a class="underline" href="#contact">contact me</a> right away.
     .bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2 
       .py-2.my-2.flex.flex-col.gap-2.text-18px
         .text-2xl What makes a session:
         ol.list-decimal.list-inside.mb-2.flex.flex-col.gap-1
-          li You schedule date and time in my Calendly for 1 hour one-on-one meeting
-          li You describe your case and contacts in the booking form
-          li You get a link to the online video-call (Google Meet) in your email
-          li I get all this info and start developing a program according to your topics of interest
-          li At the meeting we first assess your music knowledge levels and practical skills
-          li Then we find ways to improve according to your priorities and resources
-          li We will be exploring music theory with illustrations, articles, books and music practice with a variety of interactive web-apps 
-          li You will get all these instruments in your hands directly from the author
+          li You book an available one hour slot via Calendly.
+          li You describe your case and leave contacts in the booking form
+          li You instantly get an email with a link to the Google Meet video-call
+          li As I get all this info I start working on a personal program according to your topics of interest
+          li I would ask you to pay not later than 12 hours before the call, so we are both sure in arranging time
+          li As the meeting starts we first explore your music knowledge levels and practical skills
+          li We establish a common language that will be sufficient to describe your current motivations in music and arts
+          li Then we develop pathways to improve and grow according to your priorities and resources
+          li We explore music theory with illustrations, articles, books and music practice with a variety of interactive web-apps 
+          li We make music practice exciting and really independent, just the browser is enough to go
+          li You get all these audio-visual instruments and skills in your hands directly from the author 
+          li Shortly after the session I send you a list of notable apps, links and sources mentioned
 
-          li Shortly after the session I will send you a list of notable apps, links and sources mentioned
-          li You can set your own meetings schedule via my Calendly page
+    .bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2.text-sm
+        p You can set your own meetings schedule via my Calendly page. 2-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals, pace and passion. 4-8 would be enough to get very deep into many topics and feel quite confident in any music landscape.
+        p All instruments are free and open source. As a tutor I'm guiding you own research and explorations. Chromatone is a language, and after you get to know it, you can read anything yourself and speak as you wish.
 
-        p.text-sm 1-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals and pace
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
 
@@ -178,7 +189,7 @@ const isDark = useDark()
 
     #contact.bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-2xl.flex.flex-col.gap-6(style="flex: 1 1 300px")
       .text-3xl Let's talk first
-      p Want to make sure if my expertise fits your own musical journey? Let's have a chat! Share your thoughts, doubts and aspirations before you decide on a session. Contact me to discuss whether a visual approach could benefit your specific musical journey and projects.
+      p Want to make sure if my expertise fits your own musical journey? Just send me a message, ask anything! Share your thoughts, doubts and aspirations before you decide on a session. Contact me to discuss whether visual approach can really benefit your specific musical journey and current projects.
       .flex.flex-wrap.gap-4.w-full
 
         a.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
@@ -224,7 +235,7 @@ const isDark = useDark()
         .text-2xl Share this page
         .text-lg It's not so easy to reach people these days. Sharing is highly appreciated.
 
-        .text-md Contribute by showing/sending this page to someone who you know might be interested in studying music, art or code.
+        .text-md Show/send this page to someone who might be interested in studying music, arts or code with a tutor
 
 
         button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
