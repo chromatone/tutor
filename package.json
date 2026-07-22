@@ -22,7 +22,7 @@
 		"@vue/language-plugin-pug": "^3.3.7",
 		"pug": "^3.0.4",
 		"unocss": "^66.7.5",
-		"vite": "^8.1.5",
+		"vite": "^8.1.0",
 		"vite-plugin-singlefile": "^2.3.3"
 	}
 }

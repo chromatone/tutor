@@ -40,7 +40,7 @@ importers:
         specifier: ^66.7.5
         version: 66.7.5(vite@8.1.5(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
       vite:
-        specifier: ^8.1.5
+        specifier: ^8.1.0
         version: 8.1.5(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)
       vite-plugin-singlefile:
         specifier: ^2.3.3
