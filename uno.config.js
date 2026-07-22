@@ -1,7 +1,6 @@
 import { defineConfig } from 'unocss'
 
 import {
-  transformerDirectives,
   presetIcons,
   presetUno,
   extractorSplit,
@@ -11,7 +10,7 @@ import extractorPug from "@unocss/extractor-pug";
 
 export default defineConfig(
   {
-    transformers: [transformerDirectives()],
+    transformers: [],
     presets: [
       presetIcons({
         cdn: 'https://esm.sh/',

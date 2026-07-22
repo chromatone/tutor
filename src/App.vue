@@ -81,11 +81,11 @@ const isDark = useDark()
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
       p Hi! My name is Denis. I look at the world around as an engineer and a designer, but also as a philosopher and as artist. I'm paving new ways to interconnect senses and illuminate hidden depths of music and arts. 
       
-      p In my 10+ years of music and 7+ years in Chromatone studies I acquired:
+      p In my 12+ years of music and 8+ years in Chromatone studies I acquired:
       ul.list-circle
         li quite some experience as an independent musician
         li scientific understanding of primary music theory topics
-        li 2+ years of weekly live jams experience, technology and joy
+        li 5+ years of weekly live jams experience, technology and joy
         li a handful of free and open-source interactive  web-apps to learn, explore and perform music with
       p Together we can look at music from completely new perspective, improving your skills and acquiring deeper understanding of complex topics involved in music. Music is a form of Math, you know. Let's look at it closer!
 
@@ -98,10 +98,11 @@ const isDark = useDark()
       video="qthKClCRIl0")
     .bg-light-400.dark-bg-dark-300.p-6.rounded-2xl.shadow-xl.flex.flex-col.gap-4.text-md(style="flex: 1 1 300px")
 
-      p June 2024 and onwards I'm offering my expertise in a convenient form of pay-as-you-go tutoring sessions for music students and teachers, producers and performers from any place on Earth. 
-      p As a tutor I get to know you and your background first. Then - your goals and aspirations. Then I develop personal study program according to them. I estimate practice efforts, explain core topics, provide homework and sources for further research. I know how to make music study colorful and fun, so we can get there at ease. 
+      p I'm offering my expertise in a form of personal tutoring sessions for music students and teachers, producers and performers from any place on Earth. 
 
-      p Music takes time, studying music takes even more of it, but the process itself brings so much joy at the end of the day. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it too!
+      p We meet and I get to know you and your musical background first. Then - your goals and aspirations in music and arts. Then we develop personal study program according to the priorities set. I estimate practice efforts, provide guidance into core topics, give engaging homework and additional sources for further research. I know how to make music study colorful and fun, so we can get there at ease. Then we may decide on a rhythm to follow as it goes for you.
+
+      p Music takes time. Studying music takes even more of it. It may seem too much work until you realize that the exploration process brings so much joy by itself. Curiosity, sense of harmony, self-esteem and self-expression bloom when you create music, and I can assist you to blossom with it!
 
     img.rounded-xl.shadow-xl(src="/place.jpg" style="flex: 1 1 300px")
 
@@ -131,10 +132,9 @@ const isDark = useDark()
     #book.bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-4 
       .text-3xl Private tutorship session
       .flex.flex-col.gap-2.items-baseline
-        .flex.items-baseline
-          .text-5xl $54
-          .text-2xl.op-50.ml-2 / 1 hour session
-        .text-sm Special rate for the start of Academic Year 2024-2025. Both students and teachers are welcome to enhance your studies using Chromatone with attentive guidance by its author.
+        .flex.items-baseline.text-2xl
+          .op-90  $54
+          .op-50.ml-2 / 1 hour sessions
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
         aria-label="Schedule a tutorship session button"
         data-umami-event="Book"
@@ -144,7 +144,7 @@ const isDark = useDark()
         :class="{'bg-green-600': booked}"
         ) 
         .p-0 1. 
-        .flex-1 BOOK A TIME SLOT
+        .flex-1 Book a time slot
         .i-simple-icons-calendly(v-if="!booked")
         .i-la-check(v-else)
       a.dark-bg-light-400.bg-op-90.dark-bg-op-90.dark-hover-bg-op-100.my-2.text-center.relative.bg-dark-300.bg-op-95.hover-bg-op-100.transition.text-light.text-lg.flex.items-center.justify-center.p-4.flex-1.rounded-xl.shadow-xl.hover-shadow-2xl.dark-text-dark(
@@ -156,7 +156,7 @@ const isDark = useDark()
         :class="{'bg-green-600': paid}"
         ) 
         .p-0 2.
-        .flex-1.text-center PAY IN ADVANCE
+        .flex-1.text-center Safe way to pay
         .i-la-stripe.text-2xl(v-if="!paid")
         .i-la-check(v-else)
 
@@ -165,22 +165,21 @@ const isDark = useDark()
       .py-2.my-2.flex.flex-col.gap-2.text-18px
         .text-2xl What makes a session:
         ol.list-decimal.list-inside.mb-2.flex.flex-col.gap-1
-          li You book an available one hour slot via Calendly.
-          li You describe your case and leave contacts in the booking form
-          li You instantly get an email with a link to the Google Meet video-call
-          li As I get all this info I start working on a personal program according to your topics of interest
-          li I would ask you to pay not later than 12 hours before the call, so we are both sure in arranging time
-          li As the meeting starts we first explore your music knowledge levels and practical skills
-          li We establish a common language that will be sufficient to describe your current motivations in music and arts
+          li You choose to book an available one hour slot via Calendly.
+          li You may describe your case and leave contacts in the booking form
+          li Both of us receive an email with a link to the Google Meet video-call
+          li I would ask you to pay at least 1 day before the meeting, so we are both determined about arranging our time accordingly
+          li At the beginning of a call we would first explore your music knowledge level and practical skills
+          li Then we would establish some kind of common language that will be able to describe your current motivations in music and arts
           li Then we develop pathways to improve and grow according to your priorities and resources
           li We explore music theory with illustrations, articles, books and music practice with a variety of interactive web-apps 
           li We make music practice exciting and really independent, just the browser is enough to go
-          li You get all these audio-visual instruments and skills in your hands directly from the author 
-          li Shortly after the session I send you a list of notable apps, links and sources mentioned
+          li You get all these audio-visual instruments and skills in your hands directly from the author
+          li Shortly after the session I would send you a list of notable apps, links and sources mentioned
 
     .bg-light-200.dark-bg-dark-300.p-4.rounded-2xl.shadow-xl.flex.flex-col.gap-2.text-sm
-        p You can set your own meetings schedule via my Calendly page. 2-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals, pace and passion. 4-8 would be enough to get very deep into many topics and feel quite confident in any music landscape.
-        p All instruments are free and open source. As a tutor I'm guiding you own research and explorations. Chromatone is a language, and after you get to know it, you can read anything yourself and speak as you wish.
+        p You can set your own meetings schedule via my Calendly page. 2-4 sessions can guide your personal theory research and musical practice growth for weeks, months and years, depending on your goals, pace and passion. 4-8 would be enough to get very deep into many topics and feel quite confident in any music landscape. We might meet weekly, monthly or seasonly - you can have your time in music shared with me as a friendly satellite.
+        p All my instruments are free and open source. As a tutor I'm guiding your own research and explorations. Chromatone is a language, and after you get to know it, you can read anything yourself and speak with it as you wish.
 
 
   .flex.flex-wrap.gap-8.items-start(style="flex: 1 1 300px")
@@ -233,9 +232,9 @@ const isDark = useDark()
     .flex.flex-col.items-stretch.gap-4.w-full.items-start(style="flex: 1 1 240px" )
       .flex.flex-wrap.items-stretch.gap-4.shadow-2xl.bg-light-100.dark-bg-dark-300.p-4.rounded-2xl.overflow-clip.z-10.max-w-45ch.min-w-40
         .text-2xl Share this page
-        .text-lg It's not so easy to reach people these days. Sharing is highly appreciated.
+        .text-lg Peer to peer recomendations are the only real way to connect across our vast society. I would highly appreciate if you share my tutorship offer with your friends or family members. 
 
-        .text-md Show/send this page to someone who might be interested in studying music, arts or code with a tutor
+        .text-md Show or send this page to someone who might be interested in studying music, arts or programming with a competent tutor:
 
 
         button.flex.gap-4.items-center.z-4.p-2.rounded-xl.shadow-lg.hover-shadow-xl.border-4.border-dark-100.dark-border-light-900.border-op-50.hover-border-op-100.text-dark.dark-text-light.transition.dark-border-op-50.dark-hover-border-op-100(
